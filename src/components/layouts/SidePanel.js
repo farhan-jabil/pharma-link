@@ -6,8 +6,15 @@ const SidePanel = ({ children }) => {
   return (
     <>
       <div className="">
-        <div className="">PHARMA LINK</div>
-        {children}
+        <div className="flex">
+          <div>
+            <ul>
+              <li><Link to="/adminDashboard">Dashboard</Link></li>
+              <li><Link to="/adminMedicine">Medicine</Link></li>
+            </ul>
+          </div>
+          <div>{children}</div>
+        </div>
       </div>
     </>
   );
