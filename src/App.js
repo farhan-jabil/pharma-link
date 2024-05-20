@@ -3,8 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./pages/login/Loginn";
 import Dashboard from "./pages/admin/Dashboard";
 import SidePanel from "./components/layouts/SidePanel";
-import Navbar from "./components/layouts/Navbar";
+import Navbar from "./components/layouts/Navbarr";
 import Medicine from "./pages/admin/Medicine";
+import Order from "./pages/admin/Order";
 
 function App() {
   return (
@@ -31,6 +32,17 @@ function App() {
                 <SidePanel>
                   <Medicine />
                 </SidePanel>
+              </>
+            }
+          />
+          <Route
+            path="/adminOrder"
+            element={
+              <>
+                <Navbar/>
+                  <SidePanel>
+                    <Order />
+                  </SidePanel>
               </>
             }
           />

@@ -1,6 +1,6 @@
 .login_page::before {
     content: "";
-    background-image: url(../src/images/login_signup_bg.jpg);
+    background-image: url(../src/images/login_signup_bg.png);
     /* background-repeat: no-repeat; */
     background-size: 100vw 100vh;
     /* background-position: right; */
