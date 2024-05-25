@@ -6,6 +6,7 @@ import SidePanel from "./components/layouts/SidePanel";
 import Navbar from "./components/layouts/Navbarr";
 import Medicine from "./pages/admin/Medicine";
 import Order from "./pages/admin/Order";
+import Invoice from "./pages/admin/Invoice";
 
 function App() {
   return (
@@ -42,6 +43,17 @@ function App() {
                 <Navbar/>
                   <SidePanel>
                     <Order />
+                  </SidePanel>
+              </>
+            }
+          />
+          <Route
+            path="/adminInvoice"
+            element={
+              <>
+                <Navbar/>
+                  <SidePanel>
+                    <Invoice />
                   </SidePanel>
               </>
             }

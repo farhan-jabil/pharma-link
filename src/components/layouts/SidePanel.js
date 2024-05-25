@@ -12,6 +12,7 @@ const SidePanel = ({ children }) => {
               <li><Link to="/adminDashboard">Dashboard</Link></li>
               <li><Link to="/adminMedicine">Medicine</Link></li>
               <li><Link to="/adminOrder">Order</Link></li>
+              <li><Link to="/adminInvoice">Invoice</Link></li>
             </ul>
           </div>
           <div>{children}</div>
